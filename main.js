@@ -2,6 +2,7 @@ function tinhDiem() {
     let toan = Number(document.getElementById("toan").value)
     let van = Number(document.getElementById("van").value)
     let anh = Number(document.getElementById("anh").value)
+    let kv=document.getElementById("kv").value
     sum = toan + van + anh
     let khuVuc
     switch (kv) {
@@ -18,5 +19,5 @@ function tinhDiem() {
             khuVuc = 0
             break
     }
-    document.getElementById("ketQua").innerHTML = `Tổng điểm ĐH khối D của bạn là ${sum}+${khuVuc}.`
+    document.getElementById("ketQua").innerHTML = `Tổng điểm ĐH khối D của bạn là ${sum + khuVuc}.`
 }
